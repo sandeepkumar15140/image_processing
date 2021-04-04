@@ -11,7 +11,6 @@ blur_img.save("sharp.png", 'png')
 #to blur the image
 sharpen_img = img.filter(ImageFilter.SHARPEN)
 sharpen_img.save("sharp.png", 'png')
-
 #to grey the image
 grey_img = img.convert('L')
 grey_img.save('grey.png', 'png')
@@ -23,6 +22,9 @@ rotate_img.save("rotated.png", 'png')
 #rotate_img.show()
 
 #to resize an image
-resize_img = img.resize((1, 300)) #a tuple needs to be passed as an argument.
+resize_img = img.resize((100, 100)) #a tuple needs to be passed as an argument.
 resize_img.save("resize.png", 'png')
 resize_img.show()
+
+#To crop the image/images
+box = ()
