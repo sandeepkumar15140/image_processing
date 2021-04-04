@@ -20,4 +20,9 @@ grey_img.save('grey.png', 'png')
 #to roate the image
 rotate_img = img.rotate(90) #90 degree rotate
 rotate_img.save("rotated.png", 'png')
-rotate_img.show()
+#rotate_img.show()
+
+#to resize an image
+resize_img = img.resize((1, 300)) #a tuple needs to be passed as an argument.
+resize_img.save("resize.png", 'png')
+resize_img.show()
