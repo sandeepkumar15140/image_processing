@@ -24,7 +24,10 @@ rotate_img.save("rotated.png", 'png')
 #to resize an image
 resize_img = img.resize((100, 100)) #a tuple needs to be passed as an argument.
 resize_img.save("resize.png", 'png')
-resize_img.show()
+#resize_img.show()
 
 #To crop the image/images
-box = ()
+box = (50, 50, 200, 200)
+regin = img.crop(box)
+regin.save("crop.png",'png')
+regin.show()
